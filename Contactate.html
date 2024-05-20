@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codo Shop - Contactate</title>
+    <link rel="stylesheet" href="./css/Contactate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <div class="menu contenedor">
+            <img src="imagenes/logo.png" class="logo" alt="logo">
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <i class="fa-solid fa-bars menu-icono"></i>
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="./Index.html">Inicio</a></li>
+                    <li><a href="./Ropa_para_hombres.html">Ropa Masculina</a></li>
+                    <li><a href="./Ropa_para_mujer.html">Ropa Femenina</a></li>
+                    <li><a href="./Ropa_para_niños.html">Ropa Infantil</a></li>
+                    <li><a href="./Contactate.html">Contactate</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="formulario-contenedor">
+        <h1 id="titulo-contenedor">Registro</h1>
+        <div class="formulario">
+            <form id="formulario-contacto" class="formulario" onsubmit="return validarFormulario()">
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="campo">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="campo">
+                    <label for="consulta">Consulta:</label>
+                    <textarea id="consulta" name="consulta" rows="4" required></textarea>
+                </div>
+                <div class="campo">
+                    <label for="interes">Interés:</label>
+                    <select id="interes" name="interes" required>
+                        <option value="">Seleccionar</option>
+                        <option value="hombres">Ropa para Hombres</option>
+                        <option value="mujeres">Ropa para Mujeres</option>
+                        <option value="ninos">Ropa para Niños</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label>Preferencias de comunicación:</label><br>
+                    <input type="checkbox" id="ofertas" name="opciones" value="ofertas">
+                    <label for="ofertas">Recibir ofertas especiales</label><br>
+                    <input type="checkbox" id="nuevas-colecciones" name="opciones" value="nuevas-colecciones">
+                    <label for="nuevas-colecciones">Informarme sobre nuevas colecciones</label><br>
+                    <input type="checkbox" id="encuestas" name="opciones" value="encuestas">
+                    <label for="encuestas">Participar en encuestas de satisfacción</label>
+                </div>
+                <div class="campo">
+                    <label>Adjunte su DNI:</label><br>
+                    <input type="file" id="imagen" name="imagen" accept="image/*" required>
+                </div>
+                <button class="btn-compra" type="submit">Enviar consulta</button>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-contenido contenedor">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.476707473611!2d-58.5226132234137!3d-33.01756917547586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95baa82ffeff2129%3A0xd794a87cef095cb1!2sCors%C3%B3dromo%20Jose%20Luis%20Gestro!5e0!3m2!1ses-419!2sar!4v1715998077289!5m2!1ses-419!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="link">
+                <h3>Encontranos en</h3>
+                <ul>
+                    <li><i class="fa-brands fa-facebook" style="color: #ffffff;"></i>  <a href="https://www.facebook.com/">Codo Shop</a></li>
+                    <li><i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i>  <a href="https://x.com/">@CodoShop_Oficial</a></li>
+                    <li><i class="fa-brands fa-instagram" style="color: #ffffff;"></i>  <a href="https://www.instagram.com/">@Oficial-CodoShop</a></li>
+                    <li><i class="fa-brands fa-tiktok" style="color: #ffffff;"></i>  <a href="https://www.tiktok.com/es/">@Shop_Codo</a></li>
+                    <li><i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>  <a href="https://www.whatsapp.com/">(123) 456-789</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <video id="videoBG" autoplay muted loop>
+        <source src="imagenes/fondo.mp4" type="video/mp4">
+    </video>
+    <script src="js/script.js"></script>
+</body>
+</html>
