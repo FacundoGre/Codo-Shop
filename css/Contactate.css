@@ -157,6 +157,10 @@ label{
     resize: none; 
 }
 
+.redes{
+    color: #4682b4;
+}
+
 
 @media (max-width:990px){
     .menu{
