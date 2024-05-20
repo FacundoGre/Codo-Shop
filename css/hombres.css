@@ -190,6 +190,9 @@ header{
     margin:5%;
 }
 
+.redes{
+    color: #4682b4;
+}
 @media (max-width:990px){
     .menu{
         padding: 20px;
