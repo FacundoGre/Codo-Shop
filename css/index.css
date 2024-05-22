@@ -2,6 +2,8 @@
 
 *{
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -60,10 +62,11 @@ h2{
 .categorias {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .categoria {
-    flex: 1;
+    flex: 1 1 30%;
     padding: 10px;
     text-align: center;
     border: 1px solid #000;
@@ -86,6 +89,36 @@ h2{
     height: auto;
     border-radius: 10px;
     /*border: 1px solid #000;*/
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        margin: 1% 5%;
+    }
+    
+    .categoria {
+        flex: 1 1 45%;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    main {
+        margin: 1% 10%;
+    }
+    
+    .categoria {
+        flex: 1 1 40%;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    main {
+        margin: 1% 15%;
+    }
+    
+    .categoria {
+        flex: 1 1 25%;
+    }
 }
 
 @keyframes colorchange {
