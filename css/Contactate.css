@@ -88,11 +88,10 @@ header{
     text-align: center;
 }
 
-
 .contenido-producto{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap:50px;
+    gap: 50px;
 }
 
 .producto{
@@ -133,9 +132,8 @@ header{
 }
 
 .logo{
-    width:5.3%;
+    width: 5.3%;
 }
-
 
 .footer{
     padding: 50px 0;
@@ -143,13 +141,11 @@ header{
 }
 
 .map{
-        margin-right: 15px;
+    margin-right: 15px;
 }
 .footer-contenido{
-    display: flex;   
-
+    display: flex;
 }
-
 
 .link h3{
     font-size: 20px;
@@ -183,7 +179,6 @@ header{
     padding-top: 2%;
 }
 
-
 .campo{
     margin-bottom: 2%;
 }
@@ -212,15 +207,13 @@ label{
     color: #4682b4;
 }
 
-
 @media (max-width:990px){
     .menu{
         padding: 20px;
     }
 
     .menu label{
-        display:initial;
-
+        display: initial;
     }
 
     .menu .navbar{
@@ -228,7 +221,7 @@ label{
         top: 100%;
         left: 0;
         right: 0;
-        background-color:cadetblue;
+        background-color: cadetblue;
         display: none;
     }
 
@@ -239,7 +232,6 @@ label{
     .menu .navbar ul li a{
         color: white;
     }
-
 
     #menu:checked ~ .navbar{
         display: initial;
@@ -253,10 +245,6 @@ label{
         padding: 0 30px 30px 30px;
     }
 
-    .productos h2{
-        margin-bottom: 30px;
-    }
-    
     .contenido-producto{
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
@@ -267,19 +255,15 @@ label{
         height: 280px;
     }
 
-
     .footer{
         padding: 30px;  
     }
-    
+
     .footer-contenido{
         flex-direction: column;
         text-align: center;
     }
-
 }
-
-
 
 @media (max-width:330px){
     .menu{
@@ -287,8 +271,7 @@ label{
     }
 
     .menu label{
-        display:initial;
-
+        display: initial;
     }
 
     .menu .navbar{
@@ -296,7 +279,7 @@ label{
         top: 100%;
         left: 0;
         right: 0;
-        background-color:cadetblue;
+        background-color: cadetblue;
         display: none;
     }
 
@@ -307,7 +290,6 @@ label{
     .menu .navbar ul li a{
         color: white;
     }
-
 
     #menu:checked ~ .navbar{
         display: initial;
@@ -321,10 +303,6 @@ label{
         padding: 0 10px 10px 10px;
     }
 
-    .productos h2{
-        margin-bottom: 10px;
-    }
-    
     .contenido-producto{
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
@@ -335,31 +313,12 @@ label{
         height: 130px;
     }
 
-
     .footer{
         padding: 10px;  
     }
-    
 
     .footer-contenido{
         flex-direction: column;
         text-align: center;
     }
-
-    iframe {
-        max-width: 100%;
-        height: auto;
-       }
 }
-
-
-
-
-
-
-
-
-
-
-
-
