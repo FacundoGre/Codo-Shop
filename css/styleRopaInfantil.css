@@ -235,10 +235,6 @@ h2{
         padding: 0 30px 30px 30px;
     }
 
-    .productos h2{
-        margin-bottom: 30px;
-    }
-    
     .contenido-producto{
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
@@ -302,10 +298,6 @@ h2{
     .productos{
         padding: 0 10px 10px 10px;
     }
-
-    .productos h2{
-        margin-bottom: 10px;
-    }
     
     .contenido-producto{
         grid-template-columns: repeat(1, 1fr);
@@ -327,22 +319,4 @@ h2{
         flex-direction: column;
         text-align: center;
     }
-
-    iframe {
-        max-width: 100%;
-        height: auto;
-       }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
