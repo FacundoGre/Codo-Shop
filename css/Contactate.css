@@ -188,15 +188,17 @@ label{
 }
 
 .btn-compra{
-    width: 10%;
+    width: 20%;
+    height: 40px;
     transition: background-color 0.3s, color 0.3s;
     background-color: black;
     color: white;
     margin-bottom: 5%;
-    border-radius: 10%;
+    /*border-radius: 10%;*/
+    border-radius: 20px;
 }
 .btn-compra:hover {
-    background-color: #4682b4;
+    background-color: #6b6b6b;
 }
 
 .campo textarea{
