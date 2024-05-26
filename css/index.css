@@ -100,6 +100,58 @@ h2{
     min-height: 100%;
     z-index: -1;
 }
+
+.fadeInIzq{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInIzq;
+}
+
+.fadeInAbajo{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInAbajo;
+}
+
+.fadeInArriba{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInArriba;
+}
+
+@keyframes fadeInAbajo {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInIzq {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInArriba {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @media only screen and (max-width: 768px) {
     main {
         margin: 1% 5%;
